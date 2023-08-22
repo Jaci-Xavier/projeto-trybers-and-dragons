@@ -1,7 +1,7 @@
 import { EnergyType } from '../Energy';
 import Archetype from './Archetype';
 
-class Warrior extends Archetype {
+class Ranger extends Archetype {
   private _baseDamage: EnergyType;
   private static populationInstance = 0;
 
@@ -11,8 +11,8 @@ class Warrior extends Archetype {
   }
 
   static createdArchetypeInstances(): number {
-    Warrior.populationInstance += 1;
-    return Warrior.populationInstance;
+    Ranger.populationInstance += 1;
+    return Ranger.populationInstance;
   }
 
   get energyType(): EnergyType {
@@ -20,4 +20,4 @@ class Warrior extends Archetype {
   }
 }
 
-export default Warrior;
+export default Ranger;
