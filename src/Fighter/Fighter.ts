@@ -12,7 +12,7 @@ interface Fighter {
 
   levelUp(): void;
 
-  receivedDamage(attackPoints: number): number;
+  receiveDamage(attackPoints: number): number;
 }
 
 export default Fighter;
